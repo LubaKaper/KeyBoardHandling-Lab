@@ -39,18 +39,32 @@
                                     <constraint firstAttribute="height" constant="100" id="noe-bd-gp3"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eee-qm-tDQ">
+                                <rect key="frame" x="151" y="725" width="113" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Msx-dA-OTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1iS-5F-N3b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eee-qm-tDQ" secondAttribute="trailing" constant="150" id="AZ3-o7-bcq"/>
                             <constraint firstItem="WsL-HG-EhB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DJE-cp-j8o"/>
                             <constraint firstItem="Msx-dA-OTH" firstAttribute="top" secondItem="WsL-HG-EhB" secondAttribute="bottom" constant="20" id="Ij7-eK-oSo"/>
+                            <constraint firstItem="eee-qm-tDQ" firstAttribute="top" secondItem="Msx-dA-OTH" secondAttribute="bottom" constant="53.5" id="Quh-YZ-UyB"/>
                             <constraint firstItem="WsL-HG-EhB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WGD-v0-SEF"/>
                             <constraint firstItem="WsL-HG-EhB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="fZo-pR-6W8"/>
+                            <constraint firstItem="eee-qm-tDQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="fvY-aY-s3o"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Msx-dA-OTH" secondAttribute="trailing" constant="20" id="ghy-Vu-HOm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="WsL-HG-EhB" id="ERW-Wk-9jp"/>
+                        <outlet property="imageCenterYConstraint" destination="WGD-v0-SEF" id="16R-kj-Bw0"/>
+                        <outlet property="passwordTF" destination="BZj-S6-xYC" id="qfZ-gg-fuD"/>
+                        <outlet property="userNameTF" destination="Jxo-RX-Sbj" id="bV7-AY-Evf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
